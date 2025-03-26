@@ -1,4 +1,4 @@
-// Script written in Val Language by ZioEren.
+// Script written in Val Language by ZygoteCode.
 import("console");
 
 fun hello()
@@ -12,4 +12,4 @@ fun hello(name)
 }
 
 hello();
-hello("ZioEren");
+hello("ZygoteCode");
