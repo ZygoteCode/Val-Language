@@ -15,8 +15,8 @@ C:\Users\utente\Desktop\Computer\Developing\Progetti\Val Language\Interpreter\Va
 C:\Users\utente\Desktop\Computer\Developing\Progetti\Val Language\Interpreter\ValLang\bin\Debug\ValLang.exe
 C:\Users\utente\Desktop\Computer\Developing\Progetti\Val Language\Interpreter\ValLang\obj\Debug\ValLang.csproj.CoreCompileInputs.cache
 C:\Users\utente\Desktop\Computer\Developing\Progetti\Val Language\Interpreter\ValLang\obj\Debug\ValLang.exe
-C:\Users\Gabriele Bologna\Desktop\Val Language\Interpreter\BACKUP\ValLang\bin\Debug\ValLang.exe.config
-C:\Users\Gabriele Bologna\Desktop\Val Language\Interpreter\BACKUP\ValLang\bin\Debug\ValLang.exe
-C:\Users\Gabriele Bologna\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.csproj.AssemblyReference.cache
-C:\Users\Gabriele Bologna\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.csproj.CoreCompileInputs.cache
-C:\Users\Gabriele Bologna\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.exe
+C:\Users\ZygoteCode\Desktop\Val Language\Interpreter\BACKUP\ValLang\bin\Debug\ValLang.exe.config
+C:\Users\ZygoteCode\Desktop\Val Language\Interpreter\BACKUP\ValLang\bin\Debug\ValLang.exe
+C:\Users\ZygoteCode\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.csproj.AssemblyReference.cache
+C:\Users\ZygoteCode\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.csproj.CoreCompileInputs.cache
+C:\Users\ZygoteCode\Desktop\Val Language\Interpreter\BACKUP\ValLang\obj\Debug\ValLang.exe
