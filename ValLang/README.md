@@ -12,7 +12,7 @@ Also, there are no types in this language. Every variable can be an integer/floa
 # Example of script
 
 ```c#
-// Script written in Val Language by ZioEren.
+// Script written in Val Language by ZygoteCode.
 import("console");
 
 struct Position
