@@ -1,4 +1,4 @@
-// Script written in Val Language by ZioEren.
+// Script written in Val Language by ZygoteCode.
 import("console");
 
 struct Position
