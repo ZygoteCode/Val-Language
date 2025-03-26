@@ -80,7 +80,7 @@ class Program
 ");
 
             Console.WriteLine("[*] Welcome to Val Language Interpreter! A free and open source interpreted programming language.");
-            Console.WriteLine("[*] Made, developed and constructed by: https://www.github.com/ZioEren/");
+            Console.WriteLine("[*] Made, developed and constructed by: https://www.github.com/ZygoteCode/");
             Console.WriteLine("\r\n[*] Here is the list of all commands that you can use:");
             Console.WriteLine("[+] --help - Get the list of all commands");
             Console.WriteLine("[+] --clear - Clear all the console lines.");
