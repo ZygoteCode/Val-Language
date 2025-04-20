@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B774C717-0E16-4C28-9C73-9320AC75F71D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ValLang</RootNamespace>
+    <AssemblyName>ValLang</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Errors\Error.cs" />
+    <Compile Include="Errors\Errors\IllegalCharError.cs" />
+    <Compile Include="Errors\Errors\InvalidSyntaxError.cs" />
+    <Compile Include="Errors\Errors\RuntimeError.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\SetValue.cs" />
+    <Compile Include="Interpreter\Custom Values\BuiltInFunctions.cs" />
+    <Compile Include="Interpreter\Custom Values\BuiltInNamespaces.cs" />
+    <Compile Include="Interpreter\Custom Values\BuiltInStructs.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\Custom Values\Custom Namespaces\NamespaceMath.cs" />
+    <Compile Include="Interpreter\Custom Values\Custom Structs\StructHttpClient.cs" />
+    <Compile Include="Interpreter\Importer.cs" />
+    <Compile Include="Interpreter\Interpreter.cs" />
+    <Compile Include="Interpreter\RuntimeResult.cs" />
+    <Compile Include="Interpreter\SymbolTable.cs" />
+    <Compile Include="Interpreter\Values.cs" />
+    <Compile Include="Interpreter\All Values\Built In Values\BuiltInFunction.cs" />
+    <Compile Include="Interpreter\All Values\Built In Values\BuiltInNamespace.cs" />
+    <Compile Include="Interpreter\All Values\Built In Values\BuiltInStruct.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\FunctionValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\LabelValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\ListValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\NamespaceValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\NumberValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\StringValue.cs" />
+    <Compile Include="Interpreter\All Values\Normal Values\StructValue.cs" />
+    <Compile Include="Lexer\Lexer.cs" />
+    <Compile Include="Lexer\Position.cs" />
+    <Compile Include="Lexer\Token.cs" />
+    <Compile Include="Lexer\TokenType.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Parser\Nodes\Comparison Nodes\SwitchNode.cs" />
+    <Compile Include="Parser\Nodes\Import Nodes\ImportNode.cs" />
+    <Compile Include="Parser\Nodes\Import Nodes\UseNode.cs" />
+    <Compile Include="Parser\Nodes\Iteration Nodes\DoWhileNode.cs" />
+    <Compile Include="Parser\Nodes\Iteration Nodes\ForEachNode.cs" />
+    <Compile Include="Parser\Nodes\Jump Nodes\GotoNode.cs" />
+    <Compile Include="Parser\Nodes\Jump Nodes\LabelNode.cs" />
+    <Compile Include="Parser\Nodes\Object Nodes\NamespaceDefNode.cs" />
+    <Compile Include="Parser\Nodes\Object Nodes\ObjectAccessNode.cs" />
+    <Compile Include="Parser\Nodes\Object Nodes\ObjectCallNode.cs" />
+    <Compile Include="Parser\Nodes\Object Nodes\StructDefNode.cs" />
+    <Compile Include="Parser\Nodes\Object Nodes\ObjectReAssignNode.cs" />
+    <Compile Include="Parser\Nodes\Operation Nodes\BinOpNode.cs" />
+    <Compile Include="Parser\Nodes\Jump Nodes\BreakNode.cs" />
+    <Compile Include="Parser\Nodes\Function Nodes\CallNode.cs" />
+    <Compile Include="Parser\Nodes\Jump Nodes\ContinueNode.cs" />
+    <Compile Include="Parser\Nodes\Operation Nodes\DeleteNode.cs" />
+    <Compile Include="Parser\Nodes\Iteration Nodes\ForNode.cs" />
+    <Compile Include="Parser\Nodes\Function Nodes\FuncDefNode.cs" />
+    <Compile Include="Parser\Nodes\Comparison Nodes\IfNode.cs" />
+    <Compile Include="Parser\Nodes\Value Nodes\ListNode.cs" />
+    <Compile Include="Parser\Nodes\Value Nodes\NumberNode.cs" />
+    <Compile Include="Parser\Nodes\Jump Nodes\ReturnNode.cs" />
+    <Compile Include="Parser\Nodes\Value Nodes\SetNode.cs" />
+    <Compile Include="Parser\Nodes\Value Nodes\StringNode.cs" />
+    <Compile Include="Parser\Nodes\Operation Nodes\UnaryOpNode.cs" />
+    <Compile Include="Parser\Nodes\Variable Nodes\VarAccessNode.cs" />
+    <Compile Include="Parser\Nodes\Variable Nodes\VarAssignNode.cs" />
+    <Compile Include="Parser\Nodes\Variable Nodes\VarListAccessNode.cs" />
+    <Compile Include="Parser\Nodes\Variable Nodes\VarReAssignNode.cs" />
+    <Compile Include="Parser\Nodes\Iteration Nodes\WhileNode.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\ParseResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if exist "$(DevEnvDir)..\tools\vsvars32.bat" (
+   call "$(DevEnvDir)..\tools\vsvars32.bat"
+   editbin /largeaddressaware "$(TargetPath)"
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
